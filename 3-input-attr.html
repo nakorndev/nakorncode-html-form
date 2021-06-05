@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input, button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Placeholder">
+        <!-- <input type="text" placeholder="Required!" required> -->
+        <input type="text" value="ID: 1234">
+
+        <!-- minlength, maxlength: String -->
+        <input type="text" minlength="6" maxlength="10">
+
+        <!-- min, max: Number -->
+        <input type="number" min="18" max="30" step="2">
+
+        <input type="email" value="john12@example.com" readonly>
+        <input type="email" value="john12@example.com" disabled>
+
+        <input name="username" type="text" placeholder="Username:" autocomplete="off">
+        <input type="text" placeholder="Auto focus" autofocus>
+        <input type="text" placeholder="10" tabindex="10">
+        <input type="text" placeholder="12" tabindex="12">
+        <input type="text" placeholder="11" tabindex="11">
+        <button tabindex="-1">Submit</button>
+    </form>
+</body>
+</html>
